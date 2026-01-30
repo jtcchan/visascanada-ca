@@ -3,24 +3,28 @@ import Image from 'next/image';
 
 export default function Header() {
   return (
-    <header className="bg-white border-b border-gray-100">
-      <div className="max-w-6xl mx-auto px-4 py-4">
-        <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
+    <header className="header-wrapper">
+      <div className="header-container">
+        <div className="header-content">
+          <Link href="/" className="brand-link">
             <Image
               src="/images/logo.png"
               alt="VisasCanada.ca"
-              width={50}
-              height={50}
-              className="w-12 h-12"
+              width={60}
+              height={60}
+              className="brand-logo"
             />
-            <span className="text-xl font-semibold text-gray-800 font-bitter">
+            <span className="brand-text font-bitter">
               VisasCanada.ca
             </span>
           </Link>
-          <div className="text-sm text-gray-600">
-            ENG | 中文 | 日本語
-          </div>
+          <nav className="nav-menu">
+            <span className="nav-link">ENG</span>
+            <span className="nav-divider">|</span>
+            <span className="nav-link">中文</span>
+            <span className="nav-divider">|</span>
+            <span className="nav-link">日本語</span>
+          </nav>
         </div>
       </div>
     </header>

@@ -17,9 +17,8 @@ const services = [
 
 const stats = [
   { value: '8+', label: 'Years of Experience' },
-  { value: '95%', label: 'Success Rate' },
   { value: '18+', label: 'Countries Served' },
-  { value: '✭', label: '4.8 Star Reviews' },
+  { value: '4.8', label: 'Star Reviews' },
   { value: '®', label: 'Certified RCIC' },
 ];
 
@@ -139,9 +138,9 @@ export default function PermitLandingPage({ headline, subheadline, includeServic
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-white py-12 md:py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-bitter text-gray-900 mb-6">
+      <section className="bg-white py-[72px] md:py-[120px] px-[5%]">
+        <div className="max-w-[940px] mx-auto text-center">
+          <h1 className="h1 font-bitter text-gray-900 mb-[14px]">
             {headline}
           </h1>
           <div className="hr-divider" />
@@ -171,9 +170,9 @@ export default function PermitLandingPage({ headline, subheadline, includeServic
       </section>
 
       {/* Credibility Bar */}
-      <section className="bg-gray-50 py-10 px-4">
+      <section className="bg-gray-50 py-[60px] md:py-[80px] px-[5%]">
         <p className="text-center text-gray-500 italic mb-8">— About Our Team —</p>
-        <div className="flex flex-wrap justify-center gap-8 md:gap-12 max-w-4xl mx-auto">
+        <div className="flex flex-wrap justify-center gap-8 md:gap-12 max-w-[940px] mx-auto">
           {stats.map((stat) => (
             <div key={stat.label} className="credibility-card">
               <div className="credibility-icon">{stat.value}</div>
@@ -184,9 +183,9 @@ export default function PermitLandingPage({ headline, subheadline, includeServic
       </section>
 
       {/* Why Work With Us */}
-      <section className="bg-white py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold font-bitter text-gray-900 mb-4">
+      <section className="bg-white py-[72px] md:py-[120px] px-[5%]">
+        <div className="max-w-[940px] mx-auto text-center">
+          <h2 className="h2 font-bitter text-gray-900 mb-[14px]">
             Why work with us?
           </h2>
           <div className="hr-divider" />
@@ -198,28 +197,28 @@ export default function PermitLandingPage({ headline, subheadline, includeServic
 
         <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
           <div className="comparison-card recommended">
-            <h3 className="font-bold text-gray-800 mb-4 pb-4 border-b border-gray-200">
+            <h3 className="font-bold text-gray-800 mb-6 pb-4 border-b border-gray-200">
               VisasCanada.ca
             </h3>
-            <div className="space-y-4">
+            <div className="flex flex-col gap-4">
               {ourBenefits.map((benefit, i) => (
-                <div key={i} className="flex gap-3 items-start">
+                <div key={i} className="flex gap-2 items-start">
                   <CheckIcon />
-                  <p className="text-gray-600 text-sm">{benefit}</p>
+                  <p className="text-gray-600">{benefit}</p>
                 </div>
               ))}
             </div>
           </div>
 
           <div className="comparison-card not-recommended">
-            <h3 className="font-bold text-gray-800 mb-4 pb-4 border-b border-gray-200">
+            <h3 className="font-bold text-gray-800 mb-6 pb-4 border-b border-gray-200">
               Applying Yourself
             </h3>
-            <div className="space-y-4">
+            <div className="flex flex-col gap-4">
               {diyDrawbacks.map((drawback, i) => (
-                <div key={i} className="flex gap-3 items-start">
+                <div key={i} className="flex gap-2 items-start">
                   <XIcon />
-                  <p className="text-gray-600 text-sm">{drawback}</p>
+                  <p className="text-gray-600">{drawback}</p>
                 </div>
               ))}
             </div>
@@ -228,9 +227,9 @@ export default function PermitLandingPage({ headline, subheadline, includeServic
       </section>
 
       {/* How It Works */}
-      <section className="bg-gray-50 py-16 px-4">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold font-bitter text-gray-900 mb-4 text-center">
+      <section className="bg-gray-50 py-[72px] md:py-[120px] px-[5%]">
+        <div className="max-w-[940px] mx-auto">
+          <h2 className="h2 font-bitter text-gray-900 mb-[14px] text-center">
             How it works
           </h2>
           <div className="hr-divider" />
@@ -262,9 +261,9 @@ export default function PermitLandingPage({ headline, subheadline, includeServic
       </section>
 
       {/* Services Section */}
-      <section className="bg-white py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold font-bitter text-gray-900 mb-4">
+      <section className="bg-white py-[72px] md:py-[120px] px-[5%]">
+        <div className="max-w-[940px] mx-auto text-center">
+          <h2 className="h2 font-bitter text-gray-900 mb-[14px]">
             What we can help with
           </h2>
           <div className="hr-divider" />
@@ -284,9 +283,9 @@ export default function PermitLandingPage({ headline, subheadline, includeServic
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-gray-50 py-16 px-4">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold font-bitter text-gray-900 mb-4 text-center">
+      <section className="bg-gray-50 py-[72px] md:py-[120px] px-[5%]">
+        <div className="max-w-[940px] mx-auto">
+          <h2 className="h2 font-bitter text-gray-900 mb-[14px] text-center">
             Commonly Asked Questions
           </h2>
           <div className="hr-divider" />
@@ -319,9 +318,9 @@ export default function PermitLandingPage({ headline, subheadline, includeServic
       </section>
 
       {/* Final CTA */}
-      <section className="bg-white py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold font-bitter text-gray-900 mb-4">
+      <section className="bg-white py-[72px] md:py-[120px] px-[5%]">
+        <div className="max-w-[940px] mx-auto text-center">
+          <h2 className="h2 font-bitter text-gray-900 mb-[14px]">
             Get started today
           </h2>
           <div className="hr-divider" />

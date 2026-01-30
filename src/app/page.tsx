@@ -11,7 +11,6 @@ const services = [
 
 const stats = [
   { value: '8+', label: 'Years of Experience' },
-  { value: '95%', label: 'Success Rate' },
   { value: '18+', label: 'Countries Served' },
   { value: '✭', label: '4.8 Star Reviews' },
   { value: '®', label: 'Certified RCIC' },
@@ -115,14 +114,16 @@ function XIcon() {
 
 function ServiceCards() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-3xl mx-auto">
+    <div className="service-cards-grid">
       {services.map((service) => (
         <Link
           key={service}
           href="/start-your-application"
-          className="service-card"
+          className="service-card-link"
         >
-          <p className="font-bold text-gray-800">{service}</p>
+          <div className="service-card">
+            <p className="service-title">{service}</p>
+          </div>
         </Link>
       ))}
     </div>
@@ -133,27 +134,27 @@ export default function Home() {
   return (
     <>
       {/* Hero Section */}
-      <section className="bg-white py-12 md:py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold font-bitter text-gray-900 mb-6">
+      <section className="hero-section">
+        <div className="container-hero">
+          <h1 className="heading font-bitter">
             Looking to study, work, or live in Canada? We can help.
           </h1>
           <div className="hr-divider" />
-          <p className="text-lg md:text-xl text-gray-600 mb-8">
+          <p className="explainer">
             Since 2015, we&apos;ve helped thousands of successful applicants with work permits,
             study permits, visitor visas, and immigration applications.{' '}
             <strong>Today is your turn.</strong>
           </p>
         </div>
 
-        <div className="max-w-4xl mx-auto mt-10">
-          <p className="text-center text-gray-500 italic mb-6">
+        <div className="services-container">
+          <p className="caption">
             What are you looking for today?
           </p>
           <ServiceCards />
-          <p className="text-center text-gray-600 mt-8 max-w-2xl mx-auto">
+          <p className="addendum">
             <strong>Not sure what you need?</strong> Just{' '}
-            <Link href="/start-your-application" className="text-[#2E735F] underline hover:no-underline">
+            <Link href="/start-your-application" className="link">
               speak with one of our experts
             </Link>{' '}
             for free and we can help you determine what&apos;s the best path for you.
@@ -163,42 +164,42 @@ export default function Home() {
       </section>
 
       {/* Credibility Bar */}
-      <section className="bg-gray-50 py-10 px-4">
-        <p className="text-center text-gray-500 italic mb-8">— About Our Team —</p>
-        <div className="flex flex-wrap justify-center gap-8 md:gap-12 max-w-4xl mx-auto">
+      <section className="credibility-bar">
+        <p className="caption">— About Our Team —</p>
+        <div className="credibility-container">
           {stats.map((stat) => (
             <div key={stat.label} className="credibility-card">
               <div className="credibility-icon">{stat.value}</div>
-              <div className="text-sm text-gray-600">{stat.label}</div>
+              <div className="credibility-label">{stat.label}</div>
             </div>
           ))}
         </div>
       </section>
 
       {/* Why Work With Us */}
-      <section className="bg-white py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold font-bitter text-gray-900 mb-4">
+      <section className="why-us-section">
+        <div className="container-why">
+          <h2 className="heading font-bitter">
             Why work with us?
           </h2>
           <div className="hr-divider" />
-          <p className="text-gray-600 mb-12">
+          <p className="explainer">
             Canadian immigrations rules are complex. And your situation is unique. Our team of
             experts can make this process easy and painless.
           </p>
         </div>
 
-        <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-6">
+        <div className="comparison-wrap">
           {/* Our Service */}
           <div className="comparison-card recommended">
-            <h3 className="font-bold text-gray-800 mb-4 pb-4 border-b border-gray-200">
+            <h3 className="comparison-title">
               VisasCanada.ca
             </h3>
-            <div className="space-y-4">
+            <div className="comparison-list">
               {ourBenefits.map((benefit, i) => (
-                <div key={i} className="flex gap-3 items-start">
+                <div key={i} className="comparison-item">
                   <CheckIcon />
-                  <p className="text-gray-600 text-sm">{benefit}</p>
+                  <p>{benefit}</p>
                 </div>
               ))}
             </div>
@@ -206,14 +207,14 @@ export default function Home() {
 
           {/* DIY */}
           <div className="comparison-card not-recommended">
-            <h3 className="font-bold text-gray-800 mb-4 pb-4 border-b border-gray-200">
+            <h3 className="comparison-title">
               Applying Yourself
             </h3>
-            <div className="space-y-4">
+            <div className="comparison-list">
               {diyDrawbacks.map((drawback, i) => (
-                <div key={i} className="flex gap-3 items-start">
+                <div key={i} className="comparison-item">
                   <XIcon />
-                  <p className="text-gray-600 text-sm">{drawback}</p>
+                  <p>{drawback}</p>
                 </div>
               ))}
             </div>
@@ -222,19 +223,19 @@ export default function Home() {
       </section>
 
       {/* How It Works */}
-      <section className="bg-gray-50 py-16 px-4">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold font-bitter text-gray-900 mb-4 text-center">
+      <section className="how-it-works-section">
+        <div className="container-steps">
+          <h2 className="heading font-bitter">
             How it works
           </h2>
           <div className="hr-divider" />
 
-          <div className="space-y-8 mt-12">
+          <div className="steps-list">
             {steps.map((step, i) => (
-              <div key={i} className="flex gap-4 items-start">
+              <div key={i} className="steps-wrapper">
                 <div className="step-counter">{i + 1}</div>
                 <div>
-                  <p className="text-gray-700">
+                  <p className="step-text">
                     <strong>{step.title}.</strong> {step.description}
                   </p>
                 </div>
@@ -245,20 +246,20 @@ export default function Home() {
       </section>
 
       {/* Services Section */}
-      <section className="bg-white py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold font-bitter text-gray-900 mb-4">
+      <section className="services-section">
+        <div className="container-services">
+          <h2 className="heading font-bitter" style={{ textAlign: 'center' }}>
             What we can help with
           </h2>
-          <div className="hr-divider" />
-          <p className="text-gray-500 italic mb-8">What are you looking for today?</p>
+          <div className="hr-divider" style={{ marginLeft: 'auto', marginRight: 'auto' }} />
+          <p className="caption">What are you looking for today?</p>
           <ServiceCards />
-          <p className="text-gray-500 italic mt-8">
+          <p className="caption" style={{ marginTop: '32px' }}>
             Space is limited. Applications are processed on a first-come, first-served basis.
           </p>
-          <p className="text-gray-600 mt-6">
+          <p className="addendum">
             <strong>Not sure what you need?</strong> Just{' '}
-            <Link href="/start-your-application" className="text-[#2E735F] underline hover:no-underline">
+            <Link href="/start-your-application" className="link">
               speak with one of our experts
             </Link>{' '}
             for free and we can help you determine what&apos;s the best path for you. No payments required.
@@ -267,31 +268,31 @@ export default function Home() {
       </section>
 
       {/* FAQ Section */}
-      <section className="bg-gray-50 py-16 px-4">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold font-bitter text-gray-900 mb-4 text-center">
+      <section className="faq-section">
+        <div className="container-faq">
+          <h2 className="heading font-bitter" style={{ textAlign: 'center' }}>
             Commonly Asked Questions
           </h2>
-          <div className="hr-divider" />
+          <div className="hr-divider" style={{ marginLeft: 'auto', marginRight: 'auto' }} />
 
-          <div className="mt-10 space-y-0">
+          <div className="faq-list">
             {faqs.map((faq, i) => (
-              <div key={i} className="faq-item">
-                <p className="font-bold text-gray-800 mb-2">{faq.question}</p>
-                <p className="text-gray-600">
+              <div key={i} className="faq-question">
+                <p className="faq-q">{faq.question}</p>
+                <p className="faq-a">
                   <em>Answer:</em> {faq.answer}
                 </p>
               </div>
             ))}
           </div>
 
-          <div className="mt-10 text-center bg-white p-6 rounded-lg">
-            <p className="text-gray-600">
-              <strong className="italic">Don&apos;t see your question answered?</strong>
+          <div className="faq-cta">
+            <p>
+              <strong><em>Don&apos;t see your question answered?</em></strong>
               <br />
               <em>
                 Feel free to{' '}
-                <Link href="/start-your-application" className="text-[#2E735F] underline hover:no-underline">
+                <Link href="/start-your-application" className="link">
                   reach out to one of our experts
                 </Link>
                 . They can help answer you based on your unique situation. It&apos;s free to get started.
@@ -302,15 +303,15 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="bg-white py-16 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold font-bitter text-gray-900 mb-4">
+      <section className="cta-section">
+        <div className="container-cta">
+          <h2 className="heading font-bitter" style={{ textAlign: 'center' }}>
             Get started today
           </h2>
-          <div className="hr-divider" />
-          <p className="text-gray-500 italic mb-8">What are you looking for today?</p>
+          <div className="hr-divider" style={{ marginLeft: 'auto', marginRight: 'auto' }} />
+          <p className="caption">What are you looking for today?</p>
           <ServiceCards />
-          <p className="text-gray-500 italic mt-8">
+          <p className="caption" style={{ marginTop: '32px' }}>
             Space is limited. Applications are processed on a first-come, first-served basis.
           </p>
         </div>
