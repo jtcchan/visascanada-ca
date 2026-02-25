@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Exclude confirmation pages
+Disallow: /application-received
+
+Sitemap: https://visascanada.ca/sitemap.xml
