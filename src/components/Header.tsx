@@ -18,13 +18,7 @@ export default function Header() {
               VisasCanada.ca
             </span>
           </Link>
-          <nav className="nav-menu">
-            <span className="nav-link">ENG</span>
-            <span className="nav-divider">|</span>
-            <span className="nav-link">中文</span>
-            <span className="nav-divider">|</span>
-            <span className="nav-link">日本語</span>
-          </nav>
+          <div className="lang">ENG | 中文 | 日本語</div>
         </div>
       </div>
     </header>

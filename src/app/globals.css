@@ -287,12 +287,12 @@ h2, .h2 {
 .comparison-list {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 12px;
 }
 
 .comparison-item {
   display: flex;
-  gap: 12px;
+  gap: 8px;
   align-items: flex-start;
 }
 
@@ -493,27 +493,11 @@ h2, .h2 {
   line-height: 36px;
 }
 
-.nav-menu {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.nav-link {
+.lang {
+  letter-spacing: -0.25px;
+  margin-bottom: 0;
+  font-size: 14px;
   color: #000;
-  font-size: 14px;
-  padding: 10px 12px;
-  cursor: pointer;
-  transition: color 0.2s;
-}
-
-.nav-link:hover {
-  color: #b40000;
-}
-
-.nav-divider {
-  color: #ccc;
-  font-size: 14px;
 }
 
 /* Hero section - matches original */
