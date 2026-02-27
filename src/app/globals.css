@@ -15,7 +15,8 @@
 
 body {
   font-family: var(--font-family-lato);
-  color: var(--color-brand-gray);
+  color: #333;
+  background-color: #fff;
   font-size: 21px;
   line-height: 160%;
   overflow-x: hidden;
@@ -28,14 +29,14 @@ body {
 /* Original Typography */
 h1, .h1 {
   font-size: 38px;
-  line-height: 44px;
+  line-height: 130%;
   margin-top: 20px;
   font-weight: 700;
 }
 
 h2, .h2 {
   font-size: 32px;
-  line-height: 36px;
+  line-height: 130%;
   margin-top: 20px;
   font-weight: 700;
 }
@@ -50,35 +51,10 @@ h2, .h2 {
     padding-top: 72px;
     padding-bottom: 72px;
   }
-  
-  h1, .h1 {
-    font-size: 32px;
-    line-height: 38px;
-  }
-  
-  h2, .h2 {
-    font-size: 28px;
-    line-height: 32px;
-  }
 }
 
 /* Mobile font sizes - matches original */
 @media (max-width: 479px) {
-  body {
-    font-size: 18px;
-    line-height: 160%;
-  }
-  
-  h1, .h1 {
-    font-size: 30px;
-    line-height: 36px;
-  }
-  
-  h2, .h2 {
-    font-size: 24px;
-    line-height: 30px;
-  }
-  
   .comparison-card p,
   .faq-item p {
     font-size: 18px;
@@ -504,8 +480,9 @@ h2, .h2 {
 .lang {
   letter-spacing: -0.25px;
   margin-bottom: 0;
-  font-size: 14px;
-  color: #000;
+  font-size: 21px;
+  line-height: 160%;
+  color: #333;
   white-space: nowrap;
   flex-shrink: 0;
 }
@@ -546,9 +523,6 @@ h2, .h2 {
     text-overflow: ellipsis;
   }
 
-  .lang {
-    font-size: 13px;
-  }
 }
 
 /* Hero section - matches original */

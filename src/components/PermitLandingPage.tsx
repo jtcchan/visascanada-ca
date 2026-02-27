@@ -140,7 +140,7 @@ export default function PermitLandingPage({ headline, subheadline, includeServic
       {/* Hero Section */}
       <section className="bg-white py-[72px] md:py-[120px] px-[5%]">
         <div className="max-w-[940px] mx-auto text-center">
-          <h1 className="h1 font-bitter text-gray-900 mb-[14px]">
+          <h1 className="h1 mb-5">
             {headline}
           </h1>
           <div className="hr-divider" />
@@ -185,7 +185,7 @@ export default function PermitLandingPage({ headline, subheadline, includeServic
       {/* Why Work With Us */}
       <section className="bg-white py-[72px] md:py-[120px] px-[5%]">
         <div className="max-w-[940px] mx-auto text-center">
-          <h2 className="h2 font-bitter text-gray-900 mb-[14px]">
+          <h2 className="h2 mb-5">
             Why work with us?
           </h2>
           <div className="hr-divider" />
@@ -229,7 +229,7 @@ export default function PermitLandingPage({ headline, subheadline, includeServic
       {/* How It Works */}
       <section className="bg-gray-50 py-[72px] md:py-[120px] px-[5%]">
         <div className="max-w-[940px] mx-auto">
-          <h2 className="h2 font-bitter text-gray-900 mb-[14px] text-center">
+          <h2 className="h2 mb-5 text-center">
             How it works
           </h2>
           <div className="hr-divider" />
@@ -263,7 +263,7 @@ export default function PermitLandingPage({ headline, subheadline, includeServic
       {/* Services Section */}
       <section className="bg-white py-[72px] md:py-[120px] px-[5%]">
         <div className="max-w-[940px] mx-auto text-center">
-          <h2 className="h2 font-bitter text-gray-900 mb-[14px]">
+          <h2 className="h2 mb-5">
             What we can help with
           </h2>
           <div className="hr-divider" />
@@ -285,7 +285,7 @@ export default function PermitLandingPage({ headline, subheadline, includeServic
       {/* FAQ Section */}
       <section className="bg-gray-50 py-[72px] md:py-[120px] px-[5%]">
         <div className="max-w-[940px] mx-auto">
-          <h2 className="h2 font-bitter text-gray-900 mb-[14px] text-center">
+          <h2 className="h2 mb-5 text-center">
             Commonly Asked Questions
           </h2>
           <div className="hr-divider" />
@@ -320,7 +320,7 @@ export default function PermitLandingPage({ headline, subheadline, includeServic
       {/* Final CTA */}
       <section className="bg-white py-[72px] md:py-[120px] px-[5%]">
         <div className="max-w-[940px] mx-auto text-center">
-          <h2 className="h2 font-bitter text-gray-900 mb-[14px]">
+          <h2 className="h2 mb-5">
             Get started today
           </h2>
           <div className="hr-divider" />
