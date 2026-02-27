@@ -258,6 +258,13 @@ export default function Home() {
           <p className="caption" style={{ marginTop: '32px' }}>
             Space is limited. Applications are processed on a first-come, first-served basis.
           </p>
+          <p className="explainer">
+            <strong>Not sure what you need?</strong> Just{' '}
+            <Link href="/start-your-application" className="link">
+              speak with one of our experts
+            </Link>{' '}
+            for free and we can help you determine what&apos;s the best path for you. No payments required.
+          </p>
         </div>
       </section>
 
