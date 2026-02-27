@@ -577,12 +577,16 @@ h2, .h2 {
   text-align: left;
   font-size: 21px;
   line-height: 160%;
+  max-width: 940px;
 }
 
 .services-container {
   text-align: center;
   flex: 0 auto;
   margin-top: 10px;
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .caption {
