@@ -181,10 +181,10 @@ h2, .h2 {
 .credibility-container {
   gap: 10px;
   text-align: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   display: flex;
-  max-width: 700px;
+  max-width: 940px;
   margin: 0 auto;
 }
 
@@ -204,6 +204,10 @@ h2, .h2 {
   display: flex;
 }
 
+.credibility-card.success-rate {
+  display: none;
+}
+
 .credibility-icon {
   width: 40px;
   height: 40px;
@@ -220,6 +224,11 @@ h2, .h2 {
   transform: scale(1.4);
   font-size: 16px;
   font-weight: 700;
+}
+
+.credibility-icon.rating,
+.credibility-icon.registered {
+  font-size: 21px;
 }
 
 .credibility-label {
@@ -269,7 +278,6 @@ h2, .h2 {
   color: #666;
   background-color: #fdf3f3;
   border-radius: 5px;
-  padding: 30px 20px;
 }
 
 .comparison-title {
@@ -396,13 +404,7 @@ h2, .h2 {
   line-height: 160%;
 }
 
-.faq-cta {
-  text-align: center;
-  background-color: #fff;
-  padding: 24px;
-  border-radius: 8px;
-  margin-top: 40px;
-}
+/* faq-cta removed - live site uses plain addendum class */
 
 /* CTA Section */
 .cta-section {
@@ -593,4 +595,26 @@ h2, .h2 {
   .addendum {
     font-size: 18px;
   }
+}
+
+/* Footer - matches original Webflow */
+.site-footer {
+  padding-top: 40px;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-bottom: 40px;
+}
+
+.footer-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.disclaimer {
+  text-align: left;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #4a4a4a;
 }

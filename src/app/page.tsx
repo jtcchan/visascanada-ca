@@ -10,11 +10,11 @@ const services = [
 ];
 
 const stats = [
-  { value: '8+', label: 'Years of Experience' },
-  { value: '95%', label: 'Success Rate' },
-  { value: '18+', label: 'Countries Served' },
-  { value: '✭', label: '4.8 Star Reviews' },
-  { value: '®', label: 'Certified RCIC' },
+  { value: '8+', label: 'Years of Experience', cls: '' },
+  { value: '95%', label: 'Success Rate', cls: 'success-rate' },
+  { value: '18+', label: 'Countries Served', cls: '' },
+  { value: '✭', label: '4.8 Star Reviews', cls: 'rating' },
+  { value: '®', label: 'Certified RCIC', cls: 'registered' },
 ];
 
 const ourBenefits = [
@@ -137,7 +137,7 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="container-hero">
-          <h1 className="heading font-bitter">
+          <h1 className="heading">
             Looking to study, work, or live in Canada? We can help.
           </h1>
           <div className="hr-divider" />
@@ -169,8 +169,8 @@ export default function Home() {
         <p className="caption">— About Our Team —</p>
         <div className="credibility-container">
           {stats.map((stat) => (
-            <div key={stat.label} className="credibility-card">
-              <div className="credibility-icon">{stat.value}</div>
+            <div key={stat.label} className={`credibility-card${stat.cls ? ` ${stat.cls}` : ''}`}>
+              <div className={`credibility-icon${stat.cls === 'rating' || stat.cls === 'registered' ? ` ${stat.cls}` : ''}`}>{stat.value}</div>
               <div className="credibility-label">{stat.label}</div>
             </div>
           ))}
@@ -180,7 +180,7 @@ export default function Home() {
       {/* Why Work With Us */}
       <section className="why-us-section">
         <div className="container-why">
-          <h2 className="heading font-bitter">
+          <h2 className="heading">
             Why work with us?
           </h2>
           <div className="hr-divider" />
@@ -226,7 +226,7 @@ export default function Home() {
       {/* How It Works */}
       <section className="how-it-works-section">
         <div className="container-steps">
-          <h2 className="heading font-bitter">
+          <h2 className="heading">
             How it works
           </h2>
           <div className="hr-divider" />
@@ -249,7 +249,7 @@ export default function Home() {
       {/* Services Section */}
       <section className="services-section">
         <div className="container-services">
-          <h2 className="heading font-bitter" style={{ textAlign: 'center' }}>
+          <h2 className="heading" style={{ textAlign: 'center' }}>
             What we can help with
           </h2>
           <div className="hr-divider" style={{ marginLeft: 'auto', marginRight: 'auto' }} />
@@ -271,7 +271,7 @@ export default function Home() {
       {/* FAQ Section */}
       <section className="faq-section">
         <div className="container-faq">
-          <h2 className="heading font-bitter" style={{ textAlign: 'center' }}>
+          <h2 className="heading" style={{ textAlign: 'center' }}>
             Commonly Asked Questions
           </h2>
           <div className="hr-divider" style={{ marginLeft: 'auto', marginRight: 'auto' }} />
@@ -287,26 +287,25 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="faq-cta">
-            <p>
-              <strong><em>Don&apos;t see your question answered?</em></strong>
+          <p className="addendum">
+            <strong><em>Don&apos;t see your question answered?</em></strong>
+            <em>
+              {' '}
               <br />
-              <em>
-                Feel free to{' '}
-                <Link href="/start-your-application" className="link">
-                  reach out to one of our experts
-                </Link>
-                . They can help answer you based on your unique situation. It&apos;s free to get started.
-              </em>
-            </p>
-          </div>
+              Feel free to{' '}
+              <Link href="/start-your-application" className="link">
+                reach out to one of our experts
+              </Link>
+              . They can help answer you based on your unique situation. It&apos;s free to get started.
+            </em>
+          </p>
         </div>
       </section>
 
       {/* Final CTA */}
       <section className="cta-section">
         <div className="container-cta">
-          <h2 className="heading font-bitter" style={{ textAlign: 'center' }}>
+          <h2 className="heading" style={{ textAlign: 'center' }}>
             Get started today
           </h2>
           <div className="hr-divider" style={{ marginLeft: 'auto', marginRight: 'auto' }} />
