@@ -486,11 +486,11 @@ h2, .h2 {
   flex-shrink: 0;
 }
 
-/* Mobile header — keep logo+wordmark left, lang switcher right in ONE row */
+/* Mobile header — logo left (priority), lang right (de-emphasised) */
 @media (max-width: 479px) {
   .header-wrapper {
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 4px;
+    padding-bottom: 4px;
   }
 
   .header-container {
@@ -504,24 +504,32 @@ h2, .h2 {
   }
 
   .brand-link {
-    gap: 6px;
+    gap: 8px;
     min-width: 0;
   }
 
+  /* Logo: prominent on mobile — !important overrides Next.js inline style */
   .brand-logo {
-    width: 36px;
-    height: 36px;
+    width: 40px !important;
+    height: 40px !important;
     flex-shrink: 0;
   }
 
   .brand-text {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 1.2;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
 
+  /* Language switcher: smaller and muted — secondary hierarchy on mobile */
+  .lang {
+    font-size: 12px;
+    letter-spacing: 0;
+    color: #999;
+    flex-shrink: 0;
+  }
 }
 
 /* Hero section - matches original */
@@ -621,6 +629,39 @@ h2, .h2 {
     padding-left: 5vw;
     padding-right: 5vw;
   }
+}
+
+/* Content / Legal pages */
+.content-section {
+  margin-top: 100px;
+  padding: 40px 5vw 80px;
+}
+
+@media (max-width: 767px) {
+  .content-section {
+    margin-top: 60px;
+    padding: 20px 5vw 60px;
+  }
+}
+
+.container-content {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.content-body h2 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.content-body p {
+  font-size: 18px;
+  line-height: 160%;
+  color: #4a4a4a;
+  margin-bottom: 16px;
 }
 
 /* Footer - matches original Webflow */
