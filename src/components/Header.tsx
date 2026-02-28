@@ -10,8 +10,8 @@ export default function Header() {
             <Image
               src="/images/logo.png"
               alt="VisasCanada.ca"
-              width={60}
-              height={60}
+              width={44}
+              height={44}
               className="brand-logo"
             />
             <span className="brand-text font-bitter">

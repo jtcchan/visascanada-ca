@@ -11,7 +11,6 @@ const services = [
 
 const stats = [
   { value: '8+', label: 'Years of Experience', cls: '' },
-  { value: '95%', label: 'Success Rate', cls: 'success-rate' },
   { value: '18+', label: 'Countries Served', cls: '' },
   { value: '✭', label: '4.8 Star Reviews', cls: 'rating' },
   { value: '®', label: 'Certified RCIC', cls: 'registered' },
