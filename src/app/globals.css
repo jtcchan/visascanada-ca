@@ -531,6 +531,13 @@ h2, .h2 {
   padding: 40px 5vw;
 }
 
+@media (max-width: 767px) {
+  .hero-section {
+    margin-top: 60px;
+    padding: 20px 5vw 40px;
+  }
+}
+
 .container-hero {
   max-width: 940px;
   margin-left: auto;
