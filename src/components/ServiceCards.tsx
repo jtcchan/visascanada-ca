@@ -19,7 +19,7 @@ export default function ServiceCards() {
           className="service-card-link"
         >
           <div className="service-card">
-            <p className="service-title">{service}</p>
+            <p className="service-title"><strong>{service}</strong></p>
           </div>
         </Link>
       ))}

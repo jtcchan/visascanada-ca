@@ -139,7 +139,7 @@ export default function Home() {
 
       {/* Credibility Bar */}
       <section className="credibility-bar">
-        <p className="caption">— About Our Team —</p>
+        <p className="caption"><em>— About Our Team —</em></p>
         <div className="credibility-container">
           {stats.map((stat) => (
             <div key={stat.label} className={`credibility-card${stat.cls ? ` ${stat.cls}` : ''}`}>
@@ -226,7 +226,7 @@ export default function Home() {
             What we can help with
           </h2>
           <div className="hr-divider" style={{ marginLeft: 'auto', marginRight: 'auto' }} />
-          <p className="caption">What are you looking for today?</p>
+          <p className="caption"><em>What are you looking for today?</em></p>
           <ServiceCards />
           <p className="caption" style={{ marginTop: '32px' }}>
             Space is limited. Applications are processed on a first-come, first-served basis.
@@ -282,7 +282,7 @@ export default function Home() {
             Get started today
           </h2>
           <div className="hr-divider" style={{ marginLeft: 'auto', marginRight: 'auto' }} />
-          <p className="caption">What are you looking for today?</p>
+          <p className="caption"><em>What are you looking for today?</em></p>
           <ServiceCards />
           <p className="caption" style={{ marginTop: '32px' }}>
             Space is limited. Applications are processed on a first-come, first-served basis.

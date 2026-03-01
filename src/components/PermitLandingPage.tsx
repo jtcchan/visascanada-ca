@@ -140,7 +140,7 @@ export default function PermitLandingPage({
 
         {includeServiceCards && (
           <div className="services-container">
-            <p className="caption">What are you looking for today?</p>
+            <p className="caption"><em>What are you looking for today?</em></p>
             <ServiceCards />
             <p className="explainer">
               <strong>Not sure what you need?</strong> Just{' '}
@@ -156,7 +156,7 @@ export default function PermitLandingPage({
 
       {/* Credibility Bar */}
       <section className="credibility-bar">
-        <p className="caption">— About Our Team —</p>
+        <p className="caption"><em>— About Our Team —</em></p>
         <div className="credibility-container">
           {stats.map((stat) => (
             <div
@@ -242,7 +242,7 @@ export default function PermitLandingPage({
             What we can help with
           </h2>
           <div className="hr-divider" style={{ marginLeft: 'auto', marginRight: 'auto' }} />
-          <p className="caption">What are you looking for today?</p>
+          <p className="caption"><em>What are you looking for today?</em></p>
           <ServiceCards />
           <p className="caption" style={{ marginTop: '32px' }}>
             Space is limited. Applications are processed on a first-come, first-served basis.
@@ -302,7 +302,7 @@ export default function PermitLandingPage({
             Get started today
           </h2>
           <div className="hr-divider" style={{ marginLeft: 'auto', marginRight: 'auto' }} />
-          <p className="caption">What are you looking for today?</p>
+          <p className="caption"><em>What are you looking for today?</em></p>
           <ServiceCards />
           <p className="caption" style={{ marginTop: '32px' }}>
             Space is limited. Applications are processed on a first-come, first-served basis.
