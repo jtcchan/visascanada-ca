@@ -468,7 +468,7 @@ h2, .h2 {
 }
 
 .brand-text {
-  color: #6f6f6f;
+  color: #b40000;
   letter-spacing: -0.02em;
   font-size: 24px;
   font-weight: 400;
@@ -603,6 +603,7 @@ h2, .h2 {
 
 .link {
   color: #4056d6;
+  text-decoration: underline;
 }
 
 @media (max-width: 479px) {

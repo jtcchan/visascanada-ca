@@ -122,9 +122,7 @@ export default function Home() {
         </div>
 
         <div className="services-container">
-          <p className="caption">
-            What are you looking for today?
-          </p>
+          <p className="caption"><em>What are you looking for today?</em></p>
           <ServiceCards />
           <p className="explainer">
             <strong>Not sure what you need?</strong> Just{' '}
