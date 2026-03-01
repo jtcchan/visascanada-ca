@@ -152,12 +152,12 @@ h2, .h2 {
 }
 
 .credibility-container {
-  gap: 20px;
+  gap: 10px;
   text-align: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   display: flex;
-  max-width: 940px;
+  max-width: 840px;
   margin: 0 auto;
 }
 
@@ -442,7 +442,7 @@ h2, .h2 {
 .header-container {
   max-width: 940px;
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 20px 0;
 }
 
 .header-content {
@@ -464,8 +464,8 @@ h2, .h2 {
 }
 
 .brand-logo {
-  width: 44px;
-  height: 44px;
+  width: 50px;
+  height: 50px;
 }
 
 .brand-text {
@@ -590,8 +590,8 @@ h2, .h2 {
   font-weight: 400;
   line-height: 150%;
   font-style: italic;
-  color: #6b7094;
 }
+
 
 .addendum {
   text-align: center;
