@@ -453,7 +453,7 @@ h2, .h2 {
 .brand-link {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
   text-decoration: none;
   transition: opacity 0.2s;
 }
@@ -468,7 +468,7 @@ h2, .h2 {
 }
 
 .brand-text {
-  color: #b40000;
+  color: #333;
   letter-spacing: -0.02em;
   font-size: 24px;
   font-weight: 400;
